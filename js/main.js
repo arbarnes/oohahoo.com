@@ -96,7 +96,7 @@ window.onload = changeOccasion;
 const exampleOccasions = ["our first kiss.","we first met.","our first date.","our wedding.","our child was born."];
 let counter = 0;
 
-setInterval(changeOccasion, 3000);
+setInterval(changeOccasion, 2000);
     function changeOccasion() {
         counter = counter + 1;
         if (counter >= exampleOccasions.length) {

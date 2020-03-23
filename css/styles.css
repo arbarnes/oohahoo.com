@@ -22,6 +22,7 @@ body, html {
     margin-top: 0;
     padding-left: 20px;
     color: #000000;
+    cursor: pointer;
 }
 
 .questions {
@@ -68,6 +69,7 @@ button:hover {
     cursor: pointer;
 }
 
+button:click
 input {
     border-radius: none;
     height: 30px;
@@ -105,6 +107,7 @@ input[type=text] {
 
 #justifyLeft {
     text-align: left;
+    font-size: 3rem;
 }
 
 #by {
@@ -129,8 +132,8 @@ input[type=text] {
     align-items: center;
     justify-content: center;
     font-size: 4rem;
-    margin: 50px 50px 50px 50px;
-    padding: 0px 300px 0px 300px;
+    margin: 0px 50px 50px 50px;
+    padding: 25px 400px 0px 400px;
 }
 
 #startAction {
