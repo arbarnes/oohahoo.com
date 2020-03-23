@@ -63,6 +63,10 @@ button {
     padding-bottom: 5px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 input {
     border-radius: none;
     height: 30px;
@@ -94,6 +98,10 @@ input[type=text] {
     font-weight: 500;
 }
 
+.bold {
+    font-weight: 500;
+}
+
 #justifyLeft {
     text-align: left;
 }
@@ -120,8 +128,8 @@ input[type=text] {
     align-items: center;
     justify-content: center;
     font-size: 4rem;
-    margin: 150px 0 0 0;
-    padding: 0px 200px 0px 300px;
+    margin: 50px 50px 50px 50px;
+    padding: 0px 300px 0px 300px;
 }
 
 #startAction {
@@ -129,7 +137,8 @@ input[type=text] {
 }
 
 #createText {
-    font-size: 1rem;
+    font-size: 3rem;
+    color: black;
 }
 
 #startButton {
@@ -137,3 +146,9 @@ margin: 0;
 padding-top: 0;
 }
 
+#introHeader {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 50px;
+    padding: 0px 100px 0px 100px;
+}
