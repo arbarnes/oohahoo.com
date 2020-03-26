@@ -109,6 +109,11 @@ input[type=text] {
     font-size: 3rem;
 }
 
+.justifyLeft {
+    text-align: left;
+    font-size: 3rem;
+}
+
 #by {
     right: 0;
     bottom: 0;
@@ -150,7 +155,6 @@ display: inline-block;
 font-size: 1.5rem;
 text-transform: lowercase;
 border: solid .5px #000000;
-padding-bottom: 5px;
 }
 
 #introHeader {
@@ -172,4 +176,77 @@ padding-bottom: 5px;
         margin: 5% 10% 0 10%;
     }
 
+    .questions {
+        margin: -10% 10% 0 10%;
+    }
+
+    #question3 {
+        margin: -15% 10% 0 10%;
+    }
+
+    #justifyLeft {
+        font-size: 4rem;
+    }
+
 }
+
+@media (max-width: 800px ) {
+    #logo {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #landingPage {
+        margin: 0 5% 0 5%;
+        font-size: 4rem;
+    }
+    
+    #introHeader {
+        margin: 3% 5% 0 5%;
+        font-size: 3rem;
+    }
+
+    #startButton {
+        width: 50%;
+    }
+
+    .questions {
+        margin: -20% 10% 0 10%;
+    }
+
+    #question3 {
+        margin: 0px 10% 0 10%;
+    }
+}
+
+@media (max-width: 500px ) {
+    #logo {
+        text-align: center;
+        padding-left: 0;
+        font-size: 2rem;
+    }
+
+    #landingPage {
+        margin: 0 0 0 2.5%;
+        font-size: 3rem;
+    }
+    
+    #introHeader {
+        margin: 1% 2.5% -5% 2.5%;
+        font-size: 1.5rem;
+    }
+
+    #startButton {
+        width: 90%;
+    }
+
+    .questions {
+        margin: 0% 10% 0 10%;
+    }
+
+    #question3 {
+        margin: 0% 10% 0 10%;
+    }
+
+}
+

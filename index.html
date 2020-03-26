@@ -15,15 +15,13 @@
     </div>
 
     <div id="introHeader">Make your own <strong><u>love timer</u></strong>!</div>
-            <div id="landingPage">
-                <div id="justifyLeft">
+            <div id="landingPage" class="justifyLeft">
                 <p>
                 it has been <span id="counter1"></span> since
                 <strong><u>
                 <span id="examplesRevolving" class="revolving"></span>
                 </u></strong>
                 </p>
-                </div>
 
                 <div id="startAction">
                 <button type="button" id="startButton" onclick="startFunction()">create</button>
@@ -40,7 +38,7 @@
             <li id="question1" class="questions">
                 <label for="questionDate"><span id="bold">when</span> was your occasion?</label><br>
                 <input id="questionDate" name="questionDate" type="date">
-                <button type="button" id="nextButton" onclick="nextFunction()">Next</button>
+                <button type="button" id="nextButton" onclick="nextFunction()" onmousedown="nextFunction()">Next</button>
             </li>
             <span id="dateError" class="messages">you must enter a valid date!</span>
 
@@ -48,7 +46,7 @@
             <li id="question2" class="questions">
                 <label for="questionTime">at what <span id="bold">time</span>?</label><br>
                 <input id="questionTime" name="questionTime" type="time">
-                <button type="button" id="generateButton" onclick="generateFunction()">Next</button>
+                <button type="button" id="generateButton" onclick="generateFunction()" onmousedown="generateFunction()">Next</button>
             </li>
             <br><span id="timeMessage" class="messages">if you don't know the time, skip this question.</span>
 
@@ -59,7 +57,7 @@
                 <strong><u><span id="occasionText"></u></strong></div>
                 </p>
                 <input id="questionOccasion" name="questionOccasion" type="text" placeholder=" Enter your occasion">
-                <button type="button" id="finalizeButton" onclick="finalizeFunction()">finish</button>
+                <button type="button" id="finalizeButton" onclick="finalizeFunction()" onmousedown="finalizeFunction()">finish</button>
                 <!-- <button type="button" id="saveButton" onclick="saveFunction()">save</button> -->
             </li>
             <span id="occasionError" class="messages">you must enter a valid occasion!</span>
