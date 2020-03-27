@@ -86,27 +86,6 @@ Counter.prototype.updateCounter=function(){
     setTimeout(function(){self.updateCounter();}, 1000);
 }
 
-//landing page timer
-new Counter("December 12, 2012" + ' ' + "12:12:12 pm", 'counter1');
-
-//
-window.onload = changeOccasion;
-
-//revlolving examples on landing page time
-const exampleOccasions = ["our first kiss.","we first met.","our first date.","our wedding.","our child was born."];
-let counter = 0;
-
-setInterval(changeOccasion, 2000);
-    function changeOccasion() {
-        counter = counter + 1;
-        if (counter >= exampleOccasions.length) {
-            counter = 0;
-        };
-        exampleOccasions[counter];
-        document.getElementById("examplesRevolving").innerText = exampleOccasions[counter];
-    };
-    
-
 
 //Start/landing page transition
 function startFunction() {
@@ -153,14 +132,11 @@ function nextFunction() {
             const addPeriod = "."; // constant for string value of a period (".")
             document.getElementById("occasionText").innerText = occasionValue.concat(addPeriod); //use questionOccasion input to update the text following timer data
             
-            document.getElementById("questionOccasion").style.display = "none"; //hide the questionOccasion input box after submitted
-            document.getElementById("finalizeButton").style.display = "none"; //hide the save button after questionOccasion is saved
-            document.getElementById("dotdotdot").style.display = "none"; //hide the "..." following "since", after the finish button is pressed
+            document.getElementById("dotdotdot").remove(); //hide the "..." following "since", after the finish button is pressed
 
             document.getElementById("finalizeButton").remove(); //deletes the finish button from DOM
             document.getElementById("questionOccasion").remove(); //deletes questionOccasion input from DOM
-
-            document.getElementById("saveButton").style.display = "inline-block"; //makes the "save" button appear
+            document.getElementById("heartIcon").remove();
             }
         };
             

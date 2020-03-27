@@ -1,74 +1,71 @@
 <!DOCTYPE html>
+    
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/sanitize.css"/>
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-<body>
 
-    <div class="topnav">
-        <p id="logo" onclick="refreshPage()">oohahoo</p>
-    </div>
+    <body>
 
-    <div id="introHeader">Make your own <strong><u>love timer</u></strong>!</div>
-            <div id="landingPage" class="justifyLeft">
-                <p>
-                it has been <span id="counter1"></span> since
-                <strong><u>
-                <span id="examplesRevolving" class="revolving"></span>
-                </u></strong>
-                </p>
-
-                <div id="startAction">
-                <button type="button" id="startButton" onclick="startFunction()">create</button>
-                </div>
-
-            </div> 
+        <!-- topnav/logo -->
+        <div class="topnav">
+            <div id="logo" onclick="refreshPage()">oohahoo</div>
+        </div>
 
 
+        <!-- main content -->
+        <div id="form">
+
+            <div class="questions" id="question1">
+                <label for="questionDate"><strong>when</strong> was your occasion?</label>
+                <br>
+                <i class="fas fa-calendar-day"><input id="questionDate" name="questionDate" type="date"></i>
+                <button type="button" id="nextButton" onclick="nextFunction()" onmousedown="nextFunction()">next</button>
+                <br>
+                <span id="dateError" class="messages"><i class="fas fa-times"></i>you must enter a valid date!</span>
+            </div>
 
 
 
+            <div class="questions" id="question2">
+                <label for="questionTime">what<strong> time</strong> was it at?</label>
+                <br>
+                <i class="fas fa-clock"><input id="questionTime" name="questionTime" type="time"></i>
+                <button type="button" id="generateButton" onclick="generateFunction()" onmousedown="generateFunction()">next</button>
+                <br>
+                <span id="timeMessage" class="messages"><i class="fas fa-exclamation-circle"></i>if you don't know the time, skip this question.</span>
+            </div>
 
-        <ul>
-            <li id="question1" class="questions">
-                <label for="questionDate"><span id="bold">when</span> was your occasion?</label><br>
-                <input id="questionDate" name="questionDate" type="date">
-                <button type="button" id="nextButton" onclick="nextFunction()" onmousedown="nextFunction()">Next</button>
-            </li>
-            <span id="dateError" class="messages">you must enter a valid date!</span>
 
-                
-            <li id="question2" class="questions">
-                <label for="questionTime">at what <span id="bold">time</span>?</label><br>
-                <input id="questionTime" name="questionTime" type="time">
-                <button type="button" id="generateButton" onclick="generateFunction()" onmousedown="generateFunction()">Next</button>
-            </li>
-            <br><span id="timeMessage" class="messages">if you don't know the time, skip this question.</span>
 
-                
-            <li id="question3" class="questions">
-                <p><div id="justifyLeft">
-                it has been <span id="counter2"></span> since<span id="dotdotdot">...</span> 
-                <strong><u><span id="occasionText"></u></strong></div>
-                </p>
-                <input id="questionOccasion" name="questionOccasion" type="text" placeholder=" Enter your occasion">
+            <div class="questions" id="question3">
+                <p>it has been <span id="counter2"></span> since<span id="dotdotdot">...</span>
+                <strong><u><span id="occasionText"></u></strong></p>
+
+                <i id="heartIcon" class="fas fa-heart"><input id="questionOccasion" name="questionOccasion" type="text" placeholder="Enter your occasion"></i>
                 <button type="button" id="finalizeButton" onclick="finalizeFunction()" onmousedown="finalizeFunction()">finish</button>
-                <!-- <button type="button" id="saveButton" onclick="saveFunction()">save</button> -->
-            </li>
-            <span id="occasionError" class="messages">you must enter a valid occasion!</span>
-        </ul>
+                <br>
+                <span id="occasionError" class="messages">you must enter a valid occasion!</span>
+            </div>
+
+        </div>
 
 
 
-<a href="https://arbarnes.com" target="_blank">
-<div id="by">by arbarnes</div>
-</a>
+        <!-- link to arbarnes.com -->
+        <a href="https://arbarnes.com" target="_blank">
+            <div id="by">by arbarnes</div>
+        </a>
 
-<script src="js/main.js"></script>
-</body>
+        <!-- scripts -->
+        <script src="js/main.js"></script>
+        <script src="https://kit.fontawesome.com/55e555c28a.js" crossorigin="anonymous"></script>
+   
+    </body>
+
 </html>

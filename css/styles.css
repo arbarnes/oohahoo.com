@@ -11,6 +11,7 @@ body, html {
     background-repeat: no-repeat;
 }
 
+/* header/nav */
 .topnav {
     overflow: hidden;
     height: 70px;
@@ -19,105 +20,56 @@ body, html {
 #logo {
     font-family: 'Lobster', sans-serif;
     font-size: 3rem;
-    margin-top: 0;
-    padding-left: 20px;
     color: #000000;
     cursor: pointer;
+}
+
+/* main content */
+#form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .questions {
     display: none;
-    color: #707070;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 7rem;
-    margin: 0 25% 0 25%;
+    text-align: center;
+}
+
+#question1 {
+    order: 1;
+    display: block;
+}
+
+#question2 {
+    order: 2;
 }
 
 #question3 {
-    color: #707070;
-    flex-direction: column;
-    align-items: center;
-    justify-content: left;
+    order: 3;
+}
+
+#question3 p {
+    text-align: left;
     font-size: 4rem;
-    margin: 0 25% 0 25%;
+    margin: 0;
 }
 
-ul, li {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    margin-top: 180px;
-}
-
-button {
-    width: 100px;
-    height: 30px;
-    background-color: #FFFFFF;
-    color: #000000;
-    text-align: center;
-    display: inline-block;
-    font-size: 1rem;
-    text-transform: lowercase;
-    border: solid .5px #000000;
-    padding-bottom: 5px;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
-button:click
-input {
-    border-radius: none;
-    height: 30px;
-    border: solid .5px #707070;
-    margin: 0 -10px 0 0;
-}
-
-input[type=text] {
-    margin-right: 5px;
-    margin-bottom: 15px;
-    padding: 0;
-    margin-left: -100px;
-
-}
-
-#saveButton {
-    display: none;
+label {
+    font-size: 5rem;
 }
 
 .messages {
     display: none;
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
-    text-align: center;
 }
 
-#bold {
-    font-weight: 500;
-}
 
-.bold {
-    font-weight: 500;
-}
-
-#justifyLeft {
-    text-align: left;
-    font-size: 3rem;
-}
-
-.justifyLeft {
-    text-align: left;
-    font-size: 3rem;
-}
-
+/* footer */
 #by {
     right: 0;
     bottom: 0;
-    background-color: rgba(255,226,231,1);
+    background-color: transparent;
     color: #000000;
     position: fixed;
     padding: 0.5em;
@@ -125,128 +77,8 @@ input[type=text] {
     z-index: 4;
 }
 
-#by:hover {
-    background-color: #ffffff;
-    border: solid .5px #707070;
+/*  */
+
+.questions {
+    border: 2px solid red;
 }
-
-#landingPage {
-    color: #707070;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-    margin: 2% 25% 0 25%;
-}
-
-#startAction {
-    text-align: center;
-}
-
-#startButton {
-margin: 0;
-padding-top: 0;
-width: 200px;
-height: 60px;
-background-color: #FFFFFF;
-color: #000000;
-text-align: center;
-display: inline-block;
-font-size: 1.5rem;
-text-transform: lowercase;
-border: solid .5px #000000;
-}
-
-#introHeader {
-    text-align: center;
-    font-size: 4.5rem;
-    margin: 5% 0 0 0;
-
-}
-
-
-/* media queries */
-
-@media (max-width: 1200px ) {
-    #landingPage {
-        margin: 2% 15% 0 15%;
-    }
-    
-    #introHeader {
-        margin: 5% 10% 0 10%;
-    }
-
-    .questions {
-        margin: -10% 10% 0 10%;
-    }
-
-    #question3 {
-        margin: -15% 10% 0 10%;
-    }
-
-    #justifyLeft {
-        font-size: 4rem;
-    }
-
-}
-
-@media (max-width: 800px ) {
-    #logo {
-        text-align: center;
-        padding-left: 0;
-    }
-
-    #landingPage {
-        margin: 0 5% 0 5%;
-        font-size: 4rem;
-    }
-    
-    #introHeader {
-        margin: 3% 5% 0 5%;
-        font-size: 3rem;
-    }
-
-    #startButton {
-        width: 50%;
-    }
-
-    .questions {
-        margin: -20% 10% 0 10%;
-    }
-
-    #question3 {
-        margin: 0px 10% 0 10%;
-    }
-}
-
-@media (max-width: 500px ) {
-    #logo {
-        text-align: center;
-        padding-left: 0;
-        font-size: 2rem;
-    }
-
-    #landingPage {
-        margin: 0 0 0 2.5%;
-        font-size: 3rem;
-    }
-    
-    #introHeader {
-        margin: 1% 2.5% -5% 2.5%;
-        font-size: 1.5rem;
-    }
-
-    #startButton {
-        width: 90%;
-    }
-
-    .questions {
-        margin: 0% 10% 0 10%;
-    }
-
-    #question3 {
-        margin: 0% 10% 0 10%;
-    }
-
-}
-
