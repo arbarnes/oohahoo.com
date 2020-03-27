@@ -60,6 +60,12 @@ label {
     font-size: 5rem;
 }
 
+input[type="date"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    min-height: 1.2em;
+}
+
 .messages {
     display: none;
 }
