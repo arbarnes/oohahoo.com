@@ -9,6 +9,7 @@ body, html {
     background: linear-gradient(340deg, rgba(255,226,231,1) 1%, rgba(255,255,255,1) 98%);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 /* header/nav */
@@ -60,28 +61,36 @@ label {
     font-size: 5rem;
 }
 
-input[type="date"] {
-    display: block;
-    -webkit-appearance: textfield;
-    -moz-appearance: textfield;
-    min-height: 1.2em;
-}
-
 .messages {
     display: none;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid purple;
+}
 
 /* footer */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    flex: 1 0 auto;
+}
+
 #by {
     right: 0;
     bottom: 0;
     background-color: transparent;
     color: #000000;
-    position: fixed;
     padding: 0.5em;
     font-weight: 500;
+    position: fixed;
     z-index: 4;
+    text-align: right;
 }
 
 /*  */

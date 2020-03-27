@@ -135,20 +135,11 @@ function nextFunction() {
             document.getElementById("dotdotdot").remove(); //hide the "..." following "since", after the finish button is pressed
 
             document.getElementById("finalizeButton").remove(); //deletes the finish button from DOM
-            document.getElementById("questionOccasion").remove(); //deletes questionOccasion input from DOM
+            document.getElementById("questionOccasion").style.display = "none"; //deletes questionOccasion input from DOM
             document.getElementById("heartIcon").remove();
             }
         };
             
-
-//Save custom timer page to randomly generated page
-    function saveFunction() {
-        const dateData = document.getElementById("questionDate").value;
-        const timeData = document.getElementById("questionTime").value;
-        const occasionData = document.getElementById("questionOccasion").value;
-
-        console.log("dateDate");
-    }
 
 //enter clicks next button on each question
     //first question
@@ -160,7 +151,7 @@ function nextFunction() {
         }
     });
 
-    //second question
+    //second questionclear
     const questionTime = document.getElementById("questionTime");
     questionTime.addEventListener("keyup", function(event) {
         if (event.keyCode === 13) {
@@ -183,6 +174,14 @@ function nextFunction() {
         location.reload();
     };
 
+
+    //Save custom timer page to randomly generated page
+    function saveFunction(){
+        const dateData = document.getElementById("questionDate").value;
+        const timeData = document.getElementById("questionTime").value;
+        const occasionData = document.getElementById("occasionText").innerText;
+
+    };
 
 //write code that allows for users to save timer to a free randomly generated URL path ex: oohahoo.com/G3k5LJ4jkjD90k
 
