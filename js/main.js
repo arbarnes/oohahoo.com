@@ -113,7 +113,7 @@ function nextFunction() {
     const dateValue = document.getElementById("questionDate").value; //retrieve value of questionDate
     const timeValue = document.getElementById("questionTime").value; //retrieve value of questionTime
             
-    new Counter(dateValue + ' ' + timeValue, 'counter2'); //generate a timer based on user inputs
+    new Counter(dateValue + ' ' + timeValue, 'counter1'); //generate a timer based on user inputs
     
     document.getElementById("question2").style.display = "none"
     document.getElementById("question3").style.display = "inline-block"
@@ -196,7 +196,7 @@ function nextFunction() {
         const time = urlParams.get("time");
         const occasion = urlParams.get("occasion");
 
-        if (date != "") {
+        if (date) {
             let dateValue = date;
             let timeValue = time;
             let occasionValue = occasion;
@@ -209,6 +209,9 @@ function nextFunction() {
             document.getElementById("question1").style.display = "none";
             document.getElementById("question2").style.display = "none";
             document.getElementById("question3").style.display = "inline-block";
+
+            document.getElementById("loadFromForm").style.display = "none";
+            document.getElementById("loadFromUrl").style.display = "inline-block";
 
             document.getElementById("occasionInputGroup").style.display = "none";
         };

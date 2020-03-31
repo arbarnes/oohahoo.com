@@ -74,6 +74,10 @@ label {
     display: none;
 }
 
+.loadFromUrl {
+    display: none;
+}
+
 footer {
     display: flex;
     flex-direction: column;
