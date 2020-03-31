@@ -203,5 +203,10 @@ function nextFunction() {
             document.getElementById("question2").style.display = "none";
             document.getElementById("question3").style.display = "inline-block";
 
+            document.getElementById("occasionText").innerText = occasionValue;
+
+            document.getElementById("dotdotdot").style.display = "none";
+            document.getElementById("occasionInputGroup").style.display = "none";
+
     }
 };
