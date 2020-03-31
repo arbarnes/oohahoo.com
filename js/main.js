@@ -177,7 +177,7 @@ function nextFunction() {
         const timeData = document.getElementById("questionTime").value;
         const occasionData = document.getElementById("occasionText").innerText;
         
-        location.href = "http://oohahoo.com/timer?date=" + dateData + "&time=" + timeData + "&occasion=" + occasionData;
+        location.href = "http://oohahoo.com/?date=" + dateData + "&time=" + timeData + "&occasion=" + occasionData;
     };
 
     //parse URL for date, time, and occasion parameters, and load the timer if there are values present for all
