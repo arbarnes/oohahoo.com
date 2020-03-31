@@ -199,5 +199,8 @@ function nextFunction() {
 
             new Counter(dateValue + ' ' + timeValue, 'counter1'); //generate a timer based on user inputs
 
+            document.getElementsByClassName("questions").style.display = "none";
+            document.getElementById("question3").style.display = "inline-block";
+
     }
 };
