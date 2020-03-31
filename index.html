@@ -47,13 +47,16 @@
                 <p>it has been <span id="counter2"></span> since<span id="dotdotdot">...</span>
                 <strong><u><span id="occasionText"></u></strong></p>
                 <br>
+                
+                <div id="occasionInputGroup">
+                    <i id="heartIcon" class="fas fa-heart"><input id="questionOccasion" name="questionOccasion" type="text" placeholder="Enter your occasion"></i>
+                    <button type="button" id="finalizeButton" onclick="finalizeFunction()" onmousedown="finalizeFunction()">finish</button>
+                    <br>
+                    <span id="occasionError" class="messages">you must enter a valid occasion!</span>
 
-                <i id="heartIcon" class="fas fa-heart"><input id="questionOccasion" name="questionOccasion" type="text" placeholder="Enter your occasion"></i>
-                <button type="button" id="finalizeButton" onclick="finalizeFunction()" onmousedown="finalizeFunction()">finish</button>
-                <br>
-                <span id="occasionError" class="messages">you must enter a valid occasion!</span>
-
-                <button type="button" id="saveButton" onclick="saveFunction()">SAVE</button>
+                    <button type="button" id="saveButton" onclick="saveFunction()">SAVE</button>
+                </div>
+                
             </div>
 
         </div>

@@ -193,15 +193,10 @@ function nextFunction() {
         const occasionData = document.getElementById("occasionText").innerText;
 
         const date = urlParams.get(dateData);
-            console.log(date);
-
         const time = urlParams.get(timeData);
-            console.log(time);
-
         const occasion = urlParams.get(occasionData);
-            console.log(occasion);
 
-        if (dateData != "") {
+        if (date != "") {
             let dateValue = dateData;
             let timeValue = timeData;
             let occasionValue = occasionData;
@@ -214,6 +209,8 @@ function nextFunction() {
             document.getElementById("question1").style.display = "none";
             document.getElementById("question2").style.display = "none";
             document.getElementById("question3").style.display = "inline-block";
+
+            document.getElementById("occasionInputGroup").style.display = "none";
         };
 
     };
