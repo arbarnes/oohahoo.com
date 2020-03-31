@@ -192,9 +192,9 @@ function nextFunction() {
         const timeData = document.getElementById("questionTime").value;
         const occasionData = document.getElementById("occasionText").innerText;
 
-        const date = urlParams.get(dateData);
-        const time = urlParams.get(timeData);
-        const occasion = urlParams.get(occasionData);
+        const date = urlParams.get("date");
+        const time = urlParams.get("time");
+        const occasion = urlParams.get("occasion");
 
         if (date != "") {
             let dateValue = dateData;
