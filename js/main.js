@@ -177,7 +177,7 @@ function nextFunction() {
         const timeData = document.getElementById("questionTime").value;
         const occasionData = document.getElementById("occasionText").innerText;
         
-        location.href = "http://oohahoo.com/?date=" + dateData + "&time=" + timeData + "&occasion=" + occasionData;
+        location.href = "http://oohahoo.com/timer?date=" + dateData + "&time=" + timeData + "&occasion=" + occasionData;
     };
 
     //parse URL for date, time, and occasion parameters, and load the timer if there are values present for all
@@ -188,10 +188,6 @@ function nextFunction() {
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
 
-        const dateData = document.getElementById("questionDate").value;
-        const timeData = document.getElementById("questionTime").value;
-        const occasionData = document.getElementById("occasionText").innerText;
-
         const date = urlParams.get("date");
         const time = urlParams.get("time");
         const occasion = urlParams.get("occasion");
@@ -201,19 +197,7 @@ function nextFunction() {
             let timeValue = time;
             let occasionValue = occasion;
 
-            new Counter(date + ' ' + time, 'counter2'); //generate a timer based on user inputs
-            
-            const addPeriod = "."; // constant for string value of a period (".")
-            document.getElementById("occasionText").innerText = occasionValue.concat(addPeriod);
+            new Counter(dateValue + ' ' + timeValue, 'counter1'); //generate a timer based on user inputs
 
-            document.getElementById("question1").style.display = "none";
-            document.getElementById("question2").style.display = "none";
-            document.getElementById("question3").style.display = "inline-block";
-
-            document.getElementById("loadFromForm").style.display = "none";
-            document.getElementById("loadFromUrl").style.display = "inline-block";
-
-            document.getElementById("occasionInputGroup").style.display = "none";
-        };
-
-    };
+    }
+};
