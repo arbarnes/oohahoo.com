@@ -137,6 +137,8 @@ function nextFunction() {
             document.getElementById("finalizeButton").remove(); //deletes the finish button from DOM
             document.getElementById("questionOccasion").style.display = "none"; //deletes questionOccasion input from DOM
             document.getElementById("heartIcon").remove();
+
+            document.getElementById("saveButton").style.display = "inline-block";
             }
         };
             
@@ -169,21 +171,49 @@ function nextFunction() {
         }
     });
 
-    //refresh page code for logo
-    function refreshPage() {
-        location.reload();
-    };
-
-
     //Save custom timer page to randomly generated page
     function saveFunction(){
         const dateData = document.getElementById("questionDate").value;
         const timeData = document.getElementById("questionTime").value;
         const occasionData = document.getElementById("occasionText").innerText;
-
+        
+        location.href = "http://oohahoo.com/?date=" + dateData + "&time=" + timeData + "&occasion=" + occasionData;
     };
 
-//write code that allows for users to save timer to a free randomly generated URL path ex: oohahoo.com/G3k5LJ4jkjD90k
+    //parse URL for date, time, and occasion parameters, and load the timer if there are values present for all
+    
+    window.onload = parseURL();
 
-//write code that allows for user to save timer to a PAID custom URL path ex: oohahoo.com/austinandmadison
+    function parseURL() {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
 
+        const dateData = document.getElementById("questionDate").value;
+        const timeData = document.getElementById("questionTime").value;
+        const occasionData = document.getElementById("occasionText").innerText;
+
+        const date = urlParams.get(dateData);
+            console.log(date);
+
+        const time = urlParams.get(timeData);
+            console.log(time);
+
+        const occasion = urlParams.get(occasionData);
+            console.log(occasion);
+
+        if (dateData != "") {
+            let dateValue = dateData;
+            let timeValue = timeData;
+            let occasionValue = occasionData;
+
+            new Counter(dateValue + ' ' + timeValue, 'counter2'); //generate a timer based on user inputs
+            
+            const addPeriod = "."; // constant for string value of a period (".")
+            document.getElementById("occasionText").innerText = occasionValue.concat(addPeriod);
+
+            document.getElementById("question1").style.display = "none";
+            document.getElementById("question2").style.display = "none";
+            document.getElementById("question3").style.display = "inline-block";
+        };
+
+    };

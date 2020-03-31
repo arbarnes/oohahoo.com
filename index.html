@@ -14,7 +14,7 @@
 
         <!-- topnav/logo -->
         <div class="topnav">
-            <div id="logo" onclick="refreshPage()">oohahoo</div>
+            <div id="logo"><a href="http://oohahoo.com">oohahoo</a></div>
         </div>
 
 
@@ -27,7 +27,7 @@
                 <i class="fas fa-calendar-day"><input id="questionDate" name="questionDate" type="date"></i>
                 <button type="button" id="nextButton" onclick="nextFunction()" onmousedown="nextFunction()">next</button>
                 <br>
-                <span id="dateError" class="messages"><i class="fas fa-times"></i>you must enter a valid date!</span>
+                <span id="dateError" class="messages">you must enter a valid date!</span>
             </div>
 
 
@@ -38,7 +38,7 @@
                 <i class="fas fa-clock"><input id="questionTime" name="questionTime" type="time"></i>
                 <button type="button" id="generateButton" onclick="generateFunction()" onmousedown="generateFunction()">next</button>
                 <br>
-                <span id="timeMessage" class="messages"><i class="fas fa-exclamation-circle"></i>if you don't know the time, skip this question.</span>
+                <span id="timeMessage" class="messages">if you don't know the time, skip this question.</span>
             </div>
 
 
@@ -46,13 +46,14 @@
             <div class="questions" id="question3">
                 <p>it has been <span id="counter2"></span> since<span id="dotdotdot">...</span>
                 <strong><u><span id="occasionText"></u></strong></p>
+                <br>
 
                 <i id="heartIcon" class="fas fa-heart"><input id="questionOccasion" name="questionOccasion" type="text" placeholder="Enter your occasion"></i>
                 <button type="button" id="finalizeButton" onclick="finalizeFunction()" onmousedown="finalizeFunction()">finish</button>
                 <br>
                 <span id="occasionError" class="messages">you must enter a valid occasion!</span>
 
-                <button type="button" onclick="saveFunction()">SAVE</button>
+                <button type="button" id="saveButton" onclick="saveFunction()">SAVE</button>
             </div>
 
         </div>

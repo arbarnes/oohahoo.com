@@ -31,6 +31,7 @@ body, html {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    color: #707070;
 }
 
 .questions {
@@ -49,12 +50,20 @@ body, html {
 
 #question3 {
     order: 3;
+    text-align: center;
+    
 }
 
 #question3 p {
     text-align: left;
     font-size: 4rem;
     margin: 0;
+    width: 70%;
+    display: inline-block;
+}
+
+#saveButton {
+    display: none;
 }
 
 label {
