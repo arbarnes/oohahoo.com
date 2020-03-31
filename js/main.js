@@ -197,11 +197,11 @@ function nextFunction() {
         const occasion = urlParams.get("occasion");
 
         if (date != "") {
-            let dateValue = dateData;
-            let timeValue = timeData;
-            let occasionValue = occasionData;
+            let dateValue = date;
+            let timeValue = time;
+            let occasionValue = occasion;
 
-            new Counter(dateValue + ' ' + timeValue, 'counter2'); //generate a timer based on user inputs
+            new Counter(date + ' ' + time, 'counter2'); //generate a timer based on user inputs
             
             const addPeriod = "."; // constant for string value of a period (".")
             document.getElementById("occasionText").innerText = occasionValue.concat(addPeriod);
