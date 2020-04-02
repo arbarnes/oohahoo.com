@@ -118,7 +118,6 @@ function nextFunction() {
     document.getElementById("question2").style.display = "none"
     document.getElementById("question3").style.display = "inline-block"
     document.getElementById("questionOccasion").focus();
-    document.getElementById("timeMessage").style.display = "none";
     };
 
 // Save occasionQuestion input value after the save button is pressed and generate final timer page
@@ -140,7 +139,14 @@ function nextFunction() {
 
             document.getElementById("saveButton").style.display = "inline-block";
             }
-        };
+
+        const dateData = document.getElementById("questionDate").value;
+        const timeData = document.getElementById("questionTime").value;
+        const occasionData = document.getElementById("occasionText").innerText;
+        
+        location.href = "http://oohahoo.com/?date=" + dateData + "&time=" + timeData + "&occasion=" + occasionData;  
+        
+    };
             
 
 //enter clicks next button on each question
