@@ -14,7 +14,7 @@ body, html {
 
 /* header/nav */
 .topnav {
-    overflow: hidden;
+    overflow: none;
     height: 70px;
 }
 
@@ -67,15 +67,15 @@ body, html {
 }
 
 label {
-    font-size: 6vw;
+    font-size: 6rem;
 }
 
 .messages {
     display: none;
 }
 
-.loadFromUrl {
-    display: none;
+input {
+    margin-left: 2px;
 }
 
 footer {
@@ -103,4 +103,8 @@ footer {
     position: absolute;
     z-index: 4;
     text-align: right;
+}
+
+#by:hover {
+    color: #ffffff;
 }
