@@ -62,10 +62,6 @@ body, html {
     display: inline-block;
 }
 
-#saveButton {
-    display: none;
-}
-
 label {
     font-size: 6rem;
 }
@@ -76,11 +72,6 @@ label {
 
 input {
     margin-left: 2px;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
 }
 
 /* footer */
@@ -107,4 +98,29 @@ footer {
 
 #by:hover {
     color: #ffffff;
+}
+
+/* media queries */
+
+@media screen and (max-width: 800px) {
+    .topnav {
+        text-align: center;
+    }
+
+    .questions {
+        margin: 2.5% 2% 10% 2%;
+    }
+
+    label {
+        font-size: 4rem;
+    }
+
+    #question3 p {
+        font-size: 2.5rem;
+        width: 90%;
+    }
+
+    input {
+        margin-top: 10%;
+    }
 }
