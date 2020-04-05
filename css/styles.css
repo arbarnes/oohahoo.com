@@ -137,12 +137,10 @@ footer {
     #logo {
         padding: 0;
         margin-top: .5em;
-        border-bottom: 2px solid #FF5964;
-
     }
 
     .questions {
-        margin: 1.5% 1% 10% 1%;
+        margin: 1% 1% 10% 1%;
         padding: 0;
     }
 
