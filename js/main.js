@@ -87,7 +87,7 @@ Counter.prototype.updateCounter=function(){
 }
 
 //revlolving examples on landing page time
-const exampleOccasions = ["i still remember.","i miss you.","i didn't forget.","i still care."];
+const exampleOccasions = ["we got married.","our first date.","our child was born.","our first kiss.","we first met."];
 let counter = 0;
 
 setInterval(changeOccasion, 3000);
