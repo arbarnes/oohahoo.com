@@ -19,9 +19,9 @@ body, html {
 }
 
 #logo {
-    width: 175px;
-    margin: 10px 0 0 10px;
+    width: 11em;
     cursor: pointer;
+    padding: 2em 0 0 2em;
 }
 
 /* main content */
@@ -30,13 +30,14 @@ body, html {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    color: #707070;
+    color: #5f5e5e;
 }
 
 .questions {
     display: none;
     text-align: center;
-    margin-top: 100px;
+    padding-top: 150px;
+    width: 85%;
 }
 
 #question1 {
@@ -50,35 +51,57 @@ body, html {
 
 #question3 {
     order: 3;
-    text-align: center;
-    
 }
 
 #question3 p {
-    text-align: left;
     font-size: 4rem;
     margin: 0;
     width: 75%;
     display: inline-block;
+    text-align: left;
 }
 
 label {
     font-size: 6rem;
 }
 
+input[type='date'],
+input[type='time'],
+input {
+    height: 1.5em;
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    box-shadow: none;
+    margin: 2em 0 0 .25em;
+    }
+
+button {
+    
+    background-color: #FF5964;
+    color: white;
+    font-weight: bold;
+    padding: .25em 2em;
+    border-radius: 3em;
+    text-align: center;
+    font-size: .75em;
+}
+
+button:hover {
+    background-color: #DF2935;
+    
+}
 .messages {
+    display: none ;
+    padding-top: .5em;
+}
+
+#shareButtons {
     display: none;
 }
 
-input {
-    margin-left: 2px;
-}
-
 /* footer */
-body {
-    display: flex;
-    flex-direction: column;
-}
 
 footer {
     flex: 1 0 auto;
@@ -90,14 +113,13 @@ footer {
     background-color: transparent;
     color: #000000;
     padding: 0.5em;
-    font-weight: 500;
+    font-weight: bold;
     position: absolute;
-    z-index: 4;
     text-align: right;
 }
 
 #by:hover {
-    color: #ffffff;
+    color: #DF2935;
 }
 
 /* media queries */
@@ -109,10 +131,11 @@ footer {
 
     .questions {
         margin: 2.5% 2% 10% 2%;
+        padding: 0;
     }
 
     label {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     #question3 p {

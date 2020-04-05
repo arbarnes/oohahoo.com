@@ -136,6 +136,7 @@ function nextFunction() {
             document.getElementById("finalizeButton").remove(); //deletes the finish button from DOM
             document.getElementById("questionOccasion").style.display = "none"; //deletes questionOccasion input from DOM
             document.getElementById("heartIcon").remove();
+            document.getElementById("shareButtons").style.display = "inline-block";
             }
 
         const dateData = document.getElementById("questionDate").value;
