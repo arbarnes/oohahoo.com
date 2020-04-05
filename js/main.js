@@ -212,6 +212,7 @@ function nextFunction() {
 
             document.getElementById("dotdotdot").style.display = "none";
             document.getElementById("occasionInputGroup").style.display = "none";
+            document.getElementById("shareButtons").style.display = "inline-block";
 
     }
 };
