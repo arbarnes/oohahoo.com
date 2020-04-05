@@ -130,6 +130,10 @@ footer {
         text-align: center;
     }
 
+    #logo {
+        padding: none;
+    }
+
     .questions {
         margin: 2.5% 2% 10% 2%;
         padding: 0;
@@ -140,8 +144,8 @@ footer {
     }
 
     #question3 p {
-        font-size: 2.5rem;
-        width: 90%;
+        font-size: 2.5em;
+        width: 98%;
     }
 
     input {
