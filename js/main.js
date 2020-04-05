@@ -86,6 +86,20 @@ Counter.prototype.updateCounter=function(){
     setTimeout(function(){self.updateCounter();}, 1000);
 }
 
+//revlolving examples on landing page time
+const exampleOccasions = ["i still remember.","i miss you.","i didn't forget.","i still care."];
+let counter = 0;
+
+setInterval(changeOccasion, 3000);
+    function changeOccasion() {
+        counter = counter + 1;
+        if (counter >= exampleOccasions.length) {
+            counter = 0;
+        };
+        exampleOccasions[counter];
+        document.getElementById("examplesRevolving").innerText = exampleOccasions[counter];
+    };
+
 
 //Start/landing page transition
 function startFunction() {
