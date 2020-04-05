@@ -88,6 +88,10 @@ button {
     font-size: .75em;
 }
 
+#occasionText {
+    text-transform: lowercase;
+}
+
 button:hover {
     background-color: #DF2935;
     
@@ -115,7 +119,7 @@ footer {
     color: #000000;
     padding: 0.5em;
     font-weight: bold;
-    position: relative;
+    position: absolute;
     text-align: right;
 }
 
