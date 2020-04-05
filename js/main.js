@@ -91,7 +91,6 @@ Counter.prototype.updateCounter=function(){
 function startFunction() {
     document.getElementById("landingPage").style.display = "none";
     document.getElementById("question1").style.display = "inline-block";
-    document.getElementById("introHeader").style.display = "none";
 };
 
 // First question transition

@@ -19,8 +19,16 @@
 
 
         <!-- main content -->
+        
+        
         <div id="form">
+                <div class="questions" id="landingPage">
+                        <label>a special way to say <u><strong><span id="revolving">i love you.</span></strong></u><label>
+                        <br>
+                        <button type="button" id="startButton" onclick="startFunction()" onmousedown="startFunction()">create</button>
+                </div>
 
+                
             <div class="questions" id="question1">
                 <label for="questionDate"><strong>when</strong> was your occasion?</label>
                 <br>
@@ -29,8 +37,6 @@
                 <br>
                 <span id="dateError" class="messages">you must enter a valid date!</span>
             </div>
-
-
 
             <div class="questions" id="question2">
                 <label for="questionTime">what<strong> time</strong> was it at?</label>
@@ -41,10 +47,8 @@
                 <span id="timeMessage" class="messages">if you don't know the time, skip this question!</span>
             </div>
 
-
-
             <div class="questions" id="question3">
-            
+    
                 <p>it has been <span id="counter1"></span> since<span id="dotdotdot">...</span>
                 <strong><u><span id="occasionText"></u></strong></p>
 
