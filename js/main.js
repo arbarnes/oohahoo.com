@@ -223,6 +223,7 @@ function nextFunction() {
 
             document.getElementById("occasionText").innerText = occasionValue;
 
+            document.getElementById("landingPage").style.display = "none";
             document.getElementById("dotdotdot").style.display = "none";
             document.getElementById("occasionInputGroup").style.display = "none";
             document.getElementById("shareButtons").style.display = "inline-block";
