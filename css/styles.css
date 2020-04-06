@@ -42,6 +42,8 @@ body, html {
 
 #landingPage {
     display: inline-block;
+    font-size: 1.5vh;
+    width: 60%;
 }
 
 #question1 {
@@ -144,14 +146,11 @@ footer {
     .questions {
         margin: 1% 1% 10% 1%;
         padding: 0;
+        width: 95%;
     }
 
     label {
         font-size: 2.5rem;
-    }
-
-    #question3 {
-        width: 95%;
     }
 
     #question3 p {
