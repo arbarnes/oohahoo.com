@@ -155,7 +155,7 @@ footer {
     }
 
     #question3 p {
-        font-size: 2.5em;
+        font-size: 5vh;
         width: 98%;
     }
 
@@ -183,5 +183,15 @@ footer {
     #generateButton,
     #finalizeButton {
        margin-top: 5%; 
+    }
+
+    #shareButtons {
+        padding: 1em 0 0 0;
+        display: none;
+        left: 0;
+        bottom: 0;
+        padding: 0.5em;
+        position: absolute;
+        text-align: left;
     }
 }
