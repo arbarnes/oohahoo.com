@@ -158,7 +158,7 @@ footer {
     }
 
     #question3 p {
-        font-size: 10rem;
+        font-size: 6vh;
     }
 
     input {
@@ -166,7 +166,7 @@ footer {
     }
 
     #landingHeader {
-        font-size: 10rem;
+        font-size: 6vh;
         width: 100%;
     }
 
