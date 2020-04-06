@@ -100,6 +100,10 @@ button:hover {
     background-color: #DF2935;
 }
 
+#examplesRevolving:hover {
+    color: #FF5964;
+}
+
 .messages {
     display: none ;
     padding-top: .5em;
