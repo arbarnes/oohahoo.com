@@ -94,14 +94,10 @@ button {
     font-size: 1em;
 }
 
-#occasionText {
-    text-transform: lowercase;
-}
-
 button:hover {
     background-color: #DF2935;
-    
 }
+
 .messages {
     display: none ;
     padding-top: .5em;
@@ -169,5 +165,23 @@ footer {
 
     #landingHeader {
         font-size: 2em;
+    }
+
+    button {
+        background-color: #FF5964;
+        color: white;
+        font-weight: bold;
+        padding: .25em 2em;
+        border-radius: 3em;
+        text-align: center;
+        font-size: 1.5em;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #nextButton,
+    #generateButton,
+    #finalizeButton {
+       margin-top: 5%; 
     }
 }
