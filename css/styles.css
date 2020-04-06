@@ -69,8 +69,7 @@ label {
 }
 
 #landingHeader {
-    font-size: 4em;
-    text-align: left;
+    font-size: 5em;
 }
 
 input[type='date'],
@@ -166,5 +165,9 @@ footer {
 
     input {
         margin-top: 10%;
+    }
+
+    #landingHeader {
+        font-size: 2em;
     }
 }
