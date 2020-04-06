@@ -131,6 +131,10 @@ footer {
     color: #DF2935;
 }
 
+
+
+
+
 /* media queries */
 
 @media screen and (max-width: 800px) {
@@ -150,7 +154,7 @@ footer {
     }
 
     label {
-        font-size: 2.5rem;
+        font-size: 6vh;
     }
 
     #question3 p {
