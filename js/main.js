@@ -86,6 +86,7 @@ Counter.prototype.updateCounter=function(){
     setTimeout(function(){self.updateCounter();}, 1000);
 }
 
+
 //revlolving examples on landing page time
 const exampleOccasions = ["we got married.","our first date.","we got engaged.","our first kiss.","we first met."];
 let counter = 0;
@@ -99,6 +100,12 @@ setInterval(changeOccasion, 3000);
         exampleOccasions[counter];
         document.getElementById("examplesRevolving").innerText = exampleOccasions[counter];
     };
+
+
+
+
+
+
 
 
 //Start/landing page transition
